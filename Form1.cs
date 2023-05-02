@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-“using System.Media;
+using System.Media;
 
 namespace simon_says
 {
@@ -23,9 +23,10 @@ namespace simon_says
 
         private void flash()
         {
-            foreach (int number in pattern)
+            Color[] userPattern = new Color[pattern.Length];
+            for (int i = 0; i < pattern.Length; i++)
             {
-                switch (number)
+                switch (pattern[i])
                 {
                     case 1:
                         pb1.BackColor = Color.Red;
@@ -60,6 +61,10 @@ namespace simon_says
                         Thread.Sleep(500);
                         break;
                 }
+                MessageBox.Show("enter colour: ");
+                string input = Console.ReadLine();
+
+
             }
         }
 
