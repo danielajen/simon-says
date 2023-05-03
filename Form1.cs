@@ -15,6 +15,8 @@ namespace simon_says
     public partial class Form1 : Form
     {
         int[] pattern = { 1, 2, 4, 3, 3, 2, 1, 1, 2, 4 };
+        int[] userpattern = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        int spot = 0;
         public Form1()
         {
            
@@ -37,26 +39,26 @@ namespace simon_says
                         Thread.Sleep(500);
                         break;
                     case 2:
-                        pb1.BackColor = Color.Blue;
+                        pb2.BackColor = Color.Blue;
                         this.Update();
                         Thread.Sleep(500);
-                        pb1.BackColor = Color.LightGray;
+                        pb2.BackColor = Color.LightGray;
                         this.Update();
                         Thread.Sleep(500);
                         break;
                     case 3:
-                        pb1.BackColor = Color.Orange;
+                        pb3.BackColor = Color.Orange;
                         this.Update();
                         Thread.Sleep(500);
-                        pb1.BackColor = Color.LightGray;
+                        pb3.BackColor = Color.LightGray;
                         this.Update();
                         Thread.Sleep(500);
                         break;
                     case 4:
-                        pb1.BackColor = Color.LimeGreen;
+                        pb4.BackColor = Color.LimeGreen;
                         this.Update();
                         Thread.Sleep(500);
-                        pb1.BackColor = Color.LightGray;
+                        pb4.BackColor = Color.LightGray;
                         this.Update();
                         Thread.Sleep(500);
                         break;
@@ -71,6 +73,20 @@ namespace simon_says
         private void button1_Click(object sender, EventArgs e)
         {
             flash();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all(object sender, EventArgs e)
+        {
+            PictureBox picked = (PictureBox)sender;
+            char[] broken = picked.Name.ToCharArray();
+            int num_in_name = int.Parse(broken[2].ToString() + broken[2]);
+
+
         }
     }
    
