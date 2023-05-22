@@ -89,7 +89,11 @@ namespace simon_says
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.Visible = false;
+            label1.Visible = false;
+            pictureBox2.Visible = false;
             flash();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
