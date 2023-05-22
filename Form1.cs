@@ -48,7 +48,7 @@ namespace simon_says
                         pb1.BackColor = Color.Red;
                         this.Update();
                         Thread.Sleep(1000);
-                        pb1.BackColor = Color.LightGray;
+                        pb1.BackColor = Color.White;
                         this.Update();
                         Thread.Sleep(1000);
                         break;
@@ -57,7 +57,7 @@ namespace simon_says
                         pb2.BackColor = Color.Blue;
                         this.Update();
                         Thread.Sleep(1000);
-                        pb2.BackColor = Color.LightGray;
+                        pb2.BackColor = Color.White;
                         this.Update();
                         Thread.Sleep(1000);
                         break;
@@ -66,7 +66,7 @@ namespace simon_says
                         pb3.BackColor = Color.Orange;
                         this.Update();
                         Thread.Sleep(1000);
-                        pb3.BackColor = Color.LightGray;
+                        pb3.BackColor = Color.White;
                         this.Update();
                         Thread.Sleep(1000);
                         break;
@@ -75,7 +75,7 @@ namespace simon_says
                         pb4.BackColor = Color.LimeGreen;
                         this.Update();
                         Thread.Sleep(1000);
-                        pb4.BackColor = Color.LightGray;
+                        pb4.BackColor = Color.White;
                         this.Update();
                         Thread.Sleep(1000);
                         break;
