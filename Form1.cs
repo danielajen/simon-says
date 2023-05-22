@@ -117,7 +117,7 @@ namespace simon_says
             {
                 score += 10;
                 rounds++;
-                MessageBox.Show("You win! time for more rounds!");
+                MessageBox.Show("You win! time for more rounds! You have + 10 POINTS for each round");
                 spot = 0;
                 Array.Clear(userpattern, 0, userpattern.Length);
 
